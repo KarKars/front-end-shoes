@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .App {
+    @apply min-h-screen bg-indigo-100 flex flex-col justify-center space-y-24 items-center;
+  }
+  .Nav {
+    @apply flex space-x-1 justify-center;
+  }
+  .btn-nav {
+    @apply text-xl font-medium text-gray-700 hover:text-indigo-500  hover:border-b-indigo-500   cursor-pointer p-2 duration-200 border-b-2 border-b-transparent;
+  }
+  .btn-nav-active {
+    @apply text-indigo-800 border-b-2 border-b-indigo-500
+  }
+  .Form-container {
+    @apply min-h-fit bg-white w-1/2 shadow-lg rounded max-w-lg;
+  }
+  .title {
+    @apply h-14 bg-indigo-500 w-full rounded scale-95 -translate-y-4 flex justify-center items-center text-2xl text-white font-mono;
+  }
+  .Form {
+    @apply min-h-max grid grid-flow-row justify-items-center;
+  }
+  .main-Form {
+    @apply grid grid-flow-row sm:grid-cols-2;
+  }
+  .Input {
+    @apply bg-gray-100 max-w-md w-full p-2 border-none border-b-2 border-b-transparent focus:border-b-2 focus:border-indigo-500 duration-200 ease-linear rounded;
+  }
+  .btn-Form {
+    @apply bg-indigo-500 hover:shadow-lg text-white font-mono text-lg p-2 rounded my-3;
+  }
+  .List {
+    @apply w-10/12 my-3;
+  }
+  .List-title-container {
+    @apply grid w-full grid-flow-col grid-cols-5 my-2;
+  }
+  .List-header {
+    @apply text-sm text-indigo-900 font-bold;
+  }
+  .List-item-container {
+    @apply grid w-full grid-flow-col grid-cols-5 hover:bg-blue-100 py-1;
+  }
+  .btn-container {
+    @apply justify-end flex space-x-1;
+  }
+  .btn {
+    @apply p-1 rounded;
+  }
+  .success {
+    @apply hover:bg-green-300;
+  }
+  .danger {
+    @apply hover:bg-red-300;
+  }
+  .AllList-container {
+    @apply min-h-max w-3/6 bg-gray-50 rounded;
+  }
+  .AllList-title {
+    @apply h-14 w-full bg-indigo-500 -translate-y-3 rounded transform scale-95 flex justify-center items-center text-2xl font-mono text-white p-3;
+  }
+  .Main-AllList {
+    @apply w-full scale-95 grid grid-flow-row;
+  }
+  .AllList-sections {
+    @apply grid grid-flow-col grid-cols-5 justify-items-center items-center my-1;
+  }
+  .AllList-sections-style {
+    @apply text-sm font-serif text-indigo-800;
+  }
+  .AllList-section-items {
+    @apply grid grid-flow-col grid-cols-5 items-center justify-items-center py-1 hover:rounded hover:bg-blue-50 ease-linear duration-300;
+  }
+  .AllList-btn-edit {
+    @apply bg-green-100 rounded p-1;
+  }
+  .AllList-btn-delete {
+    @apply bg-red-100 rounded p-1;
+  }
+  .pagination {
+    @apply inline-flex -space-x-px;
+  }
+  .page-number {
+    @apply py-2 px-3 leading-tight rounded bg-white border border-indigo-300 hover:bg-indigo-100 hover:text-indigo-700 dark:bg-indigo-800 focus:text-white  dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-indigo-700 dark:hover:text-white;
+  }
+}
