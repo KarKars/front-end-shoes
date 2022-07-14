@@ -109,7 +109,7 @@ const Form = () => {
   return (
     <div className="Form-container ">
       <div className="title">
-        <h1>New Sell</h1>
+        <h1>New Sale</h1>
       </div>
       <div className="Form">
         <form className="main-Form">

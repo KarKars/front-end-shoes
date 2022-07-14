@@ -39,7 +39,7 @@ const List_sells = () => {
   }
   return (
     <div className="AllList-container">
-      <h1 className="AllList-title">Sells Table</h1>
+      <h1 className="AllList-title">Sales Table</h1>
       <div className="Main-AllList">
         {/* deal with empty list */}
         {data.length > 0 ? (

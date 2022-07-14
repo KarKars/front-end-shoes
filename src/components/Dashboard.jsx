@@ -38,7 +38,7 @@ const Dashboard = () => {
     labels: list.map((item) => item.date),
     datasets: [
       {
-        label: "sells",
+        label: "sales",
         data: list.map((item) => item.price),
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
