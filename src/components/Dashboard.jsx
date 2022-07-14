@@ -5,7 +5,6 @@ import "chartjs-adapter-moment";
 import { Line } from "react-chartjs-2";
 
 const Dashboard = () => {
-  //
   const [list, setList] = useState([]);
   const fetchData = async () => {
     const response = await axiosClient.get("/");
